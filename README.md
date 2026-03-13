@@ -18,26 +18,19 @@ This project demonstrates skills across **data engineering + DevOps + AI**.
 
 Pipeline workflow:
 
-1. **YouTube API + Python**  
-   A Python ingestion service retrieves YouTube comments and publishes them to Pub/Sub.
+1. **YouTube API + Python** → A Python ingestion service retrieves YouTube comments and publishes them to Pub/Sub.
 
-2. **Google Pub/Sub**  
-   Serves as the real-time streaming ingestion layer.
+2. **Google Pub/Sub** → Serves as the real-time streaming ingestion layer.
 
-3. **Apache Beam / Dataflow**  
-   Processes incoming comments, applies sentiment analysis, and formats structured records.
+3. **Apache Beam / Dataflow** → Processes incoming comments, applies sentiment analysis, and formats structured records.
 
-4. **BigQuery**  
-   Stores processed results and serves as the analytics warehouse.
+4. **BigQuery** → Stores processed results and serves as the analytics warehouse.
 
-5. **Cloud Composer (Airflow)**  
-   Orchestrates pipelines, health checks, and workflow automation.
+5. **Cloud Composer (Airflow)** → Orchestrates pipelines, health checks, and workflow automation.
 
-6. **Power BI**  
-   Connects to BigQuery to provide dashboards and analytics.
+6. **Power BI** → Connects to BigQuery to provide dashboards and analytics.
 
-7. **Terraform + Ansible + Jenkins**  
-   Automates infrastructure provisioning, environment configuration, and CI/CD deployment.
+7. **Terraform + Ansible + Jenkins** →  Automates infrastructure provisioning, environment configuration, and CI/CD deployment.
 
 ---
 
