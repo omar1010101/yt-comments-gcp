@@ -1,17 +1,12 @@
 # Real-Time YouTube Comments Sentiment Analysis (GCP Data Engineering Pipeline)
 
-**TL;DR (for recruiters):**  
-This project demonstrates an **end-to-end real-time data engineering pipeline on Google Cloud Platform** that ingests YouTube comments, performs **sentiment analysis using NLP**, and serves analytics-ready data for dashboards. The system showcases production-oriented practices including **Infrastructure as Code (Terraform)**, **configuration automation (Ansible)**, **CI/CD with Jenkins**, **stream processing with Apache Beam / Dataflow**, **workflow orchestration with Airflow (Cloud Composer)**, and **analytics in BigQuery with Power BI visualization**.
-
----
-
 ## Project Overview
 
 The goal of this project is to simulate a **production-style streaming data platform** capable of processing large volumes of real-time text data.
 
-The pipeline collects **live YouTube comments**, analyzes their **sentiment (Positive, Neutral, Negative)**, and stores structured results in **BigQuery** for analytics and dashboarding.
+The pipeline collects **live YouTube comments**, analyzes their **sentiment (Positive, Neutral, Negative)**, and stores structured results in **BigQuery** for analytics and dashboarding via PowerBI.
 
-This project demonstrates skills across **data engineering, cloud infrastructure, DevOps automation, and applied NLP**.
+This project demonstrates skills across **data engineering + DevOps + AI**.
 
 ---
 
@@ -42,28 +37,6 @@ Pipeline workflow:
 
 ---
 
-## Tech Stack
-
-**Cloud & Infrastructure**
-- Google Cloud Platform
-- Terraform (Infrastructure as Code)
-- Ansible (Configuration management)
-
-**Data Engineering**
-- Pub/Sub (Streaming ingestion)
-- Apache Beam / Dataflow (Stream processing)
-- BigQuery (Data warehouse)
-
-**Orchestration & Automation**
-- Jenkins (CI/CD pipelines)
-- Cloud Composer / Apache Airflow
-
-**Programming**
-- Python (ETL logic, API integration, NLP sentiment scoring)
-
-**Visualization**
-- Power BI
-
----
 
 ## Repository Structure
+
