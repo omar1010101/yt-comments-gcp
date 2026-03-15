@@ -34,6 +34,87 @@ Pipeline workflow:
 
 ---
 
+## Tech Stack
+
+**Cloud & Infrastructure**
+- Google Cloud Platform
+- Terraform (Infrastructure as Code)
+- Ansible (Configuration management)
+
+**Data Engineering**
+- Pub/Sub (Streaming ingestion)
+- Apache Beam / Dataflow (Stream processing)
+- BigQuery (Data warehouse)
+
+**Orchestration & Automation**
+- Jenkins (CI/CD pipelines)
+- Cloud Composer / Apache Airflow
+
+**Programming**
+- Python (ETL logic, API integration, NLP sentiment scoring)
+
+**Visualization**
+- Power BI
+
+
+---
+
 
 ## Repository Structure
 
+```bash
+yt-comments-gcp
+├── ansible
+│   ├── group_vars
+│   │   └── all.yml
+│   └── playbooks
+│       ├── deploy_cf.yml
+│       ├── deploy_dag.yml
+│       ├── deploy_dataflow.yml
+│       └── run_pretrained_sentiment.yml
+├── app
+│   ├── config.yaml
+│   ├── main.py
+│   └── requirements.txt
+├── dags
+│   └── yt_pipeline_dag.py
+├── dataflow
+│   ├── config.yaml
+│   ├── pipeline.py
+│   ├── requirements.txt
+│   └── setup.py
+├── infra
+│   ├── backend.tf
+│   ├── envs
+│   │   └── dev
+│   │       ├── main.tf
+│   │       ├── outputs.tf
+│   │       ├── tfplan
+│   │       └── variables.tf
+│   ├── modules
+│   │   ├── bigquery
+│   │   │   └── main.tf
+│   │   ├── composer
+│   │   │   └── main.tf
+│   │   ├── iam
+│   │   │   └── main.tf
+│   │   ├── pubsub
+│   │   │   └── main.tf
+│   │   └── storage
+│   │       └── main.tf
+│   └── providers.tf
+├── Jenkinsfile
+├── ml
+│   └── pretrained_sentiment.py
+└── README.md
+```
+
+
+---
+
+
+## 📫 Connect with Me
+
+- **Author:** *Omar EL KALKHA*
+- **LinkedIn:** [https://www.linkedin.com/in/omar-el-kalkha/](https://www.linkedin.com/in/omar-el-kalkha/)
+- **Email:** [omarelkalkha5@gmail.com](mailto:omarelkalkha5@gmail.com)
