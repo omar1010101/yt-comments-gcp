@@ -13,7 +13,7 @@ This project demonstrates skills across **data engineering + DevOps + AI**.
 ## Architecture
 
 <p align="center">
-  <img width="100%" src="docs/architecture.jpg" alt="Project Architecture">
+  <img width="100%" src="/docs/architecture.jpg" alt="Project Architecture">
 </p>
 
 Pipeline workflow:
